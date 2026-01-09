@@ -1,38 +1,93 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HOLY GRAIL GRID */
 body {
   display: grid;
   height: 100vh;
+
+  /* REQUIRED GRID SYNTAX */
   grid-template: auto 1fr auto / 300px 1fr auto;
+  font-family: Arial, sans-serif;
 }
 
+/* Header */
 header {
-  background: lightpink;
+  background: #3a3a3a;
+  color: white;
   padding: 2rem;
+
+  /* REQUIRED */
   grid-column: 1 / 4;
 }
 
+/* Navigation (Flexbox) */
+nav {
+  background: #000;
+
+  /* REQUIRED */
+  grid-column: 1 / 4;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation li {
+  flex: 1 1 auto;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+/* Left Sidebar */
 .left-sidebar {
-  background: lightblue;
+  background: #d9d9d9;
+  padding: 1rem;
+
+  /* REQUIRED */
   grid-column: 1 / 2;
 }
 
+/* Main Content */
 main {
-  background: coral;
+  background: #cfcfcf;
+  padding: 1.5rem;
+
   grid-column: 2 / 3;
 }
 
+/* Right Sidebar */
 .right-sidebar {
-  background: yellow;
+  background: #ffffff;
+  padding: 1rem;
+
   grid-column: 3 / 4;
 }
 
+/* Footer */
 footer {
-  background: wheat;
-  padding: 2rem;
+  background: #3a3a3a;
+  color: white;
   text-align: center;
-  grid-column: 1 / 4;
-}
+  padding: 2rem;
 
-.left-sidebar,
-.right-sidebar {
-  padding: 1rem;
+  /* REQUIRED */
+  grid-column: 1 / 4;
 }

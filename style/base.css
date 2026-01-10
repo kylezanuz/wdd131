@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background-color: #1f4e79;
+    color: white;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* GRID CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: .5rem;
+}
+
+/* CARD */
+.card {
+    border: 2px solid #1f4e79;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #1f4e79;
+    color: white;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+/* ABOUT CONTENT */
+.about-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.about-content img {
+    width: 120px;
+}
+
+/* COUNTRY */
+.card h3 {
+    border-top: 1.5px solid #303c48;
+    text-align: center;
+}
+
+.country {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.country img {
+    width: 100px;
+}
+
+/* RESOURCES */
+.card ul {
+    padding: 5rem 2rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: blue;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

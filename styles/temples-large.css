@@ -19,7 +19,6 @@
         flex-direction: row;
         gap: 1.5rem;
         margin-left: auto;
-        /* 🔥 THIS IS THE FIX */
     }
 
     .navigation a {

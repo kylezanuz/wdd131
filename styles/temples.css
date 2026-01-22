@@ -13,7 +13,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER */
 header {
     background-color: #4b136e;
     color: white;
@@ -34,7 +33,6 @@ header-bar {
     cursor: pointer;
 }
 
-/* NAV */
 nav {
     display: none;
     flex-direction: column;
@@ -57,7 +55,6 @@ nav.open {
     display: flex;
 }
 
-/* MAIN */
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -86,7 +83,6 @@ figcaption {
     color: #4b136e;
 }
 
-/* FOOTER */
 footer {
     background-color: #4b136e;
     color: white;

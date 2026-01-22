@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    #site-title {
+        white-space: nowrap;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-left: auto;
+        /* 🔥 THIS IS THE FIX */
+    }
+
+    .navigation a {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .navigation a:hover {
+        background-color: #6a1fa1;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

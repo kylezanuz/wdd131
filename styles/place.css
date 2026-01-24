@@ -34,6 +34,7 @@ header h1 {
     letter-spacing: 10px;
     background: linear-gradient(to right, var(--accent-purple), var(--accent-pink));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -172,6 +173,11 @@ footer p {
     background: white;
     font-weight: bold;
     -webkit-background-clip: text;
+    /* For Safari */
+    -moz-background-clip: text;
+    /* For Firefox */
+    background-clip: text;
+    /* Standard property */
     -webkit-text-fill-color: transparent;
     margin-bottom: 5px;
 }

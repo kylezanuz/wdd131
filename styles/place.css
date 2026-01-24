@@ -1,9 +1,12 @@
 :root {
-    --midnight-blue: #0a0b1e;
-    --accent-purple: #7c4dff;
-    --accent-pink: #ff2d55;
+    --color-1: #003060;
+    /* Deep Blue */
+    --color-2: #005b96;
+    /* Ocean Blue */
+    --color-3: #b3cde0;
+    /* Light Sky Blue */
     --text-light: #e0e0e0;
-    --card-bg: rgba(16, 18, 45, 0.85);
+    --card-bg: rgba(10, 11, 30, 0.85);
     --border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -15,7 +18,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--midnight-blue);
+    background-color: var(--color-1);
     color: var(--text-light);
     min-height: 100vh;
     display: flex;
@@ -26,22 +29,23 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     padding: .25rem;
     text-align: center;
-    border-bottom: 2px solid var(--accent-purple);
+    border-bottom: 2px solid var(--color-2);
 }
 
 header h1 {
     font-size: 5rem;
     letter-spacing: 10px;
-    background: linear-gradient(to right, var(--accent-purple), var(--accent-pink));
+    background: linear-gradient(to right, var(--color-2), var(--color-3));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 main {
-    flex: 5;
+    flex: 1;
+    /* Changed from 5 to 1 for proper flex behavior */
     position: relative;
-    padding: 5rem;
+    /* Removed large padding as it breaks mobile overlay logic */
 }
 
 .hero {
@@ -72,14 +76,14 @@ main {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 1.5rem;
-    box-shadow: 0 8px 32px rgba(63, 62, 62, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 .card h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid var(--accent-purple);
+    border-bottom: 3px solid var(--color-2);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,7 +101,7 @@ main {
 }
 
 .data-list li strong {
-    color: var(--accent-purple);
+    color: var(--color-2);
 }
 
 .weather-info p {
@@ -114,10 +118,10 @@ main {
 .chill-result {
     margin-top: 1rem;
     padding: 0.75rem;
-    background: rgba(124, 77, 255, 0.1);
+    background: rgba(0, 48, 96, 0.2);
     border-radius: 8px;
     text-align: center;
-    color: var(--accent-pink);
+    color: var(--color-3);
     font-weight: bold;
 }
 
@@ -161,23 +165,19 @@ main {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 1.5rem;
     text-align: center;
     font-size: 0.85rem;
     color: white;
-    border-top: 2px solid var(--accent-purple);
+    border-top: 2px solid var(--color-2);
 }
 
 footer p {
-    background: white;
+    background: linear-gradient(to right, var(--color-2), var(--color-3));
     font-weight: bold;
     -webkit-background-clip: text;
-    /* For Safari */
-    -moz-background-clip: text;
-    /* For Firefox */
     background-clip: text;
-    /* Standard property */
     -webkit-text-fill-color: transparent;
     margin-bottom: 5px;
 }

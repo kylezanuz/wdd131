@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Midnight - Kyle Danielle Santiago</title>
+    <meta name="description" content="Tokyo, Japan travel guide with midnight vibes">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tokyo</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.png" media="(min-width: 900px)">
+                <img src="images/hero-small.png" alt="Tokyo Night View">
+            </picture>
+        </div>
+
+        <div class="content-container">
+            <section class="card data">
+                <h2>Data</h2>
+                <ul class="data-list">
+                    <li><strong>Area:</strong> 2,194 sq km</li>
+                    <li><strong>Population:</strong> 13,960,000</li>
+                    <li><strong>Capital:</strong> Tokyo</li>
+                    <li><strong>Country:</strong> Japan</li>
+                    <li><strong>Languages:</strong> Japanese</li>
+                    <li><strong>Currency:</strong> Yen (¥)</li>
+                    <li><strong>Time Zone:</strong> UTC+9</li>
+                    <li><strong>Internet TLD:</strong> .jp</li>
+                </ul>
+            </section>
+
+            <section class="card weather">
+                <h2>Weather <img src="images/weather.svg" class="weather-icon-mobile" alt="Weather"></h2>
+                <div class="weather-info">
+                    <p><strong>Temperature:</strong> <span>8 °C</span></p>
+                    <p><strong>Conditions:</strong> Clear Sky</p>
+                    <p><strong>Wind:</strong> <span>12 km/h</span></p>
+                    <div class="chill-result">
+                        Wind Chill: <span id="windchill"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> <span>🌸</span> Kyle Danielle Santiago <span>🌸</span> Tokyo, Japan</p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+</body>
+
+</html>

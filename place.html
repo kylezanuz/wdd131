@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokyo Midnight - Kyle Danielle Santiago</title>
-    <meta name="description" content="Tokyo, Japan travel guide with midnight vibes">
     <meta name="description"
-        content="Explore Tokyo Midnight, a comprehensive travel guide for Tokyo, Japan. Discover architecture, culture, and weather details by Kyle Danielle Santiago.">
+        content="Explore Tokyo Midnight: A comprehensive travel guide for Tokyo, Japan. Discover architecture, culture, and weather details by Kyle Danielle Santiago.">
     <meta name="author" content="Kyle Danielle Santiago">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
@@ -21,8 +20,9 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/hero-large.jpg" media="(min-width: 900px)">
-                <img src="images/hero-small.jpg" alt="Tokyo Night View">
+                <source srcset="images/hero-desktop.webp" type="image/webp" media="(min-width: 900px)">
+                <source srcset="images/hero-mobile.webp" type="image/webp">
+                <img src="images/hero-mobile.webp" alt="Tokyo Night View" width="1500" height="750">
             </picture>
         </div>
 
@@ -42,7 +42,7 @@
             </section>
 
             <section class="card weather">
-                <h2>Weather <img src="images/weather.svg" class="weather-icon-mobile" alt="Weather"></h2>
+                <h2>Weather <img src="weather.svg" class="weather-icon-mobile" alt="Weather Icon"></h2>
                 <div class="weather-info">
                     <p><strong>Temperature:</strong> <span>8 °C</span></p>
                     <p><strong>Conditions:</strong> Clear Sky</p>

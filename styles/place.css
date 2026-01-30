@@ -43,9 +43,7 @@ header h1 {
 
 main {
     flex: 1;
-    /* Changed from 5 to 1 for proper flex behavior */
     position: relative;
-    /* Removed large padding as it breaks mobile overlay logic */
 }
 
 .hero {
@@ -151,7 +149,7 @@ main {
 
     .card {
         width: 320px;
-        margin: 0;
+        margin: 5rem;
     }
 
     .weather h2::after {

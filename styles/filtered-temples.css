@@ -20,6 +20,44 @@ header {
     text-align: center;
 }
 
+/* --- NAVIGATION: flex highlight + hover effect --- */
+nav ul {
+    display: flex;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* --- TEMPLE GRID: flex behavior inside cards --- */
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temple-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- IMAGE ZOOM EFFECT --- */
+.temple-card img {
+    transition: transform 0.3s ease;
+}
+
+.temple-card:hover img {
+    transform: scale(1.05);
+}
+
 nav ul {
     list-style: none;
     padding: 0;

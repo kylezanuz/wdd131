@@ -53,30 +53,32 @@ const temples = [
         location: "Quezon City, Metro Manila, Philippines",
         dedicated: "1984, September, 25",
         area: 26683,
-        imageUrl: "https://churchofjesuschristtemples.org/manila-philippines-temple/photographs/"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
     },
     {
         templeName: "Cebu City Philippines",
         location: "Cebu City, Cebu, Philippines",
         dedicated: "2010, June, 13",
         area: 29556,
-        imageUrl: "https://churchofjesuschristtemples.org/cebu-city-philippines-temple/photographs/"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/133-Cebu-City-Philippines-Temple.jpg"
     },
     {
         templeName: "Salt Lake",
         location: "Salt Lake City, Utah, United States",
         dedicated: "1893, April, 6",
         area: 253015,
-        imageUrl: "https://churchofjesuschristtemples.org/salt-lake-temple/photographs/"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
     },
     {
         templeName: "Rome Italy",
         location: "Rome, Italy",
         dedicated: "2019, March, 10",
         area: 40000,
-        imageUrl: "https://churchofjesuschristtemples.org/rome-italy-temple/photographs/"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
     }
 ];
+
+temples.sort((a, b) => a.templeName.localeCompare(b.templeName));
 
 const templeGrid = document.getElementById("temple-grid");
 const filterTitle = document.getElementById("filter-title");

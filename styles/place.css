@@ -1,0 +1,179 @@
+:root {
+    --color-1: #003060;
+    --color-2: #005b96;
+    --color-3: #b3cde0;
+    --text-light: #e0e0e0;
+    --card-bg: rgba(10, 11, 30, 0.85);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-1);
+    color: var(--text-light);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .25rem;
+    text-align: center;
+    border-bottom: 2px solid var(--color-2);
+}
+
+header h1 {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    background: linear-gradient(to right, var(--color-2), var(--color-3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    flex: 1;
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7) contrast(1.1);
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--color-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-list {
+    list-style: none;
+}
+
+.data-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.data-list li strong {
+    color: var(--color-2);
+}
+
+.weather-info p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.weather-icon-mobile {
+    width: 50px;
+    height: 50px;
+}
+
+.chill-result {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(0, 48, 96, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    color: var(--color-3);
+    font-weight: bold;
+}
+
+@media (min-width: 900px) {
+    main {
+        height: 600px;
+    }
+
+    .hero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .content-container {
+        position: relative;
+        z-index: 10;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .card {
+        width: 320px;
+        margin: 0;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: white;
+    border-top: 2px solid var(--color-2);
+}
+
+footer p {
+    background: linear-gradient(to right, var(--color-2), var(--color-3));
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+}

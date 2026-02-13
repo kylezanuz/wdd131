@@ -1,5 +1,4 @@
 :root {
-    /* Color Variables - Blue Theme */
     --primary-color: #004E92;
     --secondary-color: #000428;
     --accent-color: #FFAE00;
@@ -8,7 +7,6 @@
     --text-color: #333333;
     --text-light: #FFFFFF;
 
-    /* Spacing */
     --spacing-unit: 1rem;
     --border-radius: 8px;
 }
@@ -43,7 +41,6 @@ h6 {
     padding: 0 var(--spacing-unit);
 }
 
-/* Header */
 header {
     background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
     color: var(--text-light);
@@ -62,7 +59,6 @@ header h2 {
     font-weight: 400;
 }
 
-/* Main Content */
 main {
     padding: 2rem 0;
 }
@@ -82,7 +78,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* Flexbox Layouts for Content */
 .content-block {
     display: flex;
     flex-wrap: wrap;
@@ -90,7 +85,6 @@ main {
     align-items: flex-start;
 }
 
-/* Site Name / Logo */
 .logo-preview img {
     max-width: 150px;
     height: auto;
@@ -112,7 +106,6 @@ main {
     display: inline-block;
 }
 
-/* Scenarios */
 .scenario-list {
     width: 100%;
     display: flex;
@@ -127,7 +120,6 @@ main {
     border-left: 3px solid var(--accent-color);
 }
 
-/* Color Palette */
 .color-palette {
     display: flex;
     flex-wrap: wrap;
@@ -174,7 +166,6 @@ main {
     background-color: var(--background-color);
 }
 
-/* Typography */
 .typography-showcase {
     display: flex;
     flex-direction: column;
@@ -205,7 +196,6 @@ main {
     font-style: italic;
 }
 
-/* Wireframes */
 .wireframes-container {
     display: flex;
     flex-wrap: wrap;
@@ -226,7 +216,6 @@ main {
     margin-top: 1rem;
 }
 
-/* Footer */
 footer {
     background-color: var(--secondary-color);
     color: var(--text-light);
@@ -235,7 +224,6 @@ footer {
     margin-top: 2rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;

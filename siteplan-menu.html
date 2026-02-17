@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Foods | Local Filipino Street Foods</title>
+    <meta name="description"
+        content="A comprehensive gallery of popular Filipino street foods with descriptions and ingredients.">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Local Filipino Street Foods Logo" width="50" height="50">
+                <span>Filipino Street Foods</span>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <ul id="nav-menu">
+                    <li><a href="siteplan.html">Home</a></li>
+                    <li><a href="siteplan-menu.html" class="active">Street Foods</a></li>
+                    <li><a href="siteplan-contact.html">Share Your Favorite</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Popular Street Foods</h1>
+        <p>Explore the diverse flavors found in the streets of the Philippines.</p>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Fried">Fried</button>
+            <button class="filter-btn" data-filter="Grilled">Grilled</button>
+            <button class="filter-btn" data-filter="Steam/Others">Steam/Others</button>
+        </div>
+
+        <div class="food-grid" id="full-menu-grid">
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="currentyear"></span> Kyle Danielle Santiago 🌸 Local Food Philippines</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/siteplan.js"></script>
+</body>
+
+</html>

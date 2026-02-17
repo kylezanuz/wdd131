@@ -4,148 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Local Filipino Street Foods</title>
     <meta name="description"
-        content="Informational site highlighting popular Filipino street foods, their ingredients, preparation, and cultural context.">
-    <meta name="author" content="Kyle Danielle Santiago">
-    <title>Site Plan | Local Filipino Street Foods</title>
+        content="Discover the vibrant and delicious world of Local Filipino Street Foods. From Kwek-kwek to Isaw, explore the flavors of the Philippines.">
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <h1>Site Plan</h1>
-            <h2>Local Filipino Street Foods</h2>
-            <div class="student-info">
-                <p>WDD 131 - Week 05</p>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Local Filipino Street Foods Logo" width="50" height="50">
+                <span>Filipino Street Foods</span>
             </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <ul id="nav-menu">
+                    <li><a href="siteplan.html" class="active">Home</a></li>
+                    <li><a href="siteplan-menu.html">Street Foods</a></li>
+                    <li><a href="siteplan-contact.html">Share Your Favorite</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-
-        <section class="section-card">
-            <h3>1. Site Name</h3>
-            <div class="content-block">
-                <div class="logo-preview">
-
-                    <img src="images/logo.png" alt="Local Filipino Street Foods Logo">
-                </div>
-                <div class="text-content">
-                    <h4>Name: Local Filipino Street Foods</h4>
-                    <p><strong>Description:</strong> Local Filipino Street Foods is an informational website that
-                        highlights popular street foods commonly found in the Philippines. The site name was chosen
-                        because it clearly communicates the cultural focus of the website and appeals to both locals and
-                        visitors who are curious about Filipino food culture.</p>
-                    <p class="domain"><strong>Optional domain:</strong> filipinostreetfoods.site</p>
-                </div>
+    <main>
+        <section class="hero">
+            <img src="images/street-food-hero.webp" alt="Vibrant Filipino Street Food Scene" class="hero-img">
+            <div class="hero-content">
+                <h1>Experience the Heart of Filipino Culture</h1>
+                <p>Authentic, flavorful, and deeply rooted in tradition.</p>
+                <a href="siteplan-menu.html" class="btn">Explore Foods</a>
             </div>
         </section>
 
-        <section class="section-card">
-            <h3>2. Site Purpose</h3>
-            <div class="content-block">
-                <p>The purpose of this website is to inform users about well-known Filipino street foods by providing
-                    descriptions, images, and basic cultural background.</p>
-                <ul>
-                    <li>Showcase different food items (e.g., Kwek-kwek, Isaw, Balut).</li>
-                    <li>Explain ingredients and preparation methods.</li>
-                    <li>Describe where and when these foods are commonly sold.</li>
-                    <li>Provide a simple form for visitors to share their favorites.</li>
-                </ul>
-            </div>
+        <section class="container welcome">
+            <h2>Maligayang Pagdating!</h2>
+            <p>Street food in the Philippines is more than just a quick bite; it's a social experience. On every corner,
+                you'll find vendors serving up a variety of grilled, fried, and steamed treats that bring people
+                together.</p>
         </section>
 
-        <section class="section-card">
-            <h3>3. Scenarios</h3>
-            <div class="content-block">
-                <p>Questions our target audience might ask:</p>
-                <div class="scenario-list">
-                    <div class="scenario-item">
-                        <strong>Scenario 1:</strong>
-                        <p>"I'm visiting the Philippines for the first time. What is 'kwek-kwek' made of, and is it safe
-                            to eat?"</p>
-                    </div>
-                    <div class="scenario-item">
-                        <strong>Scenario 2:</strong>
-                        <p>"Where can I find the most authentic Balut in Manila, and how do you properly eat it?"</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-card">
-            <h3>4. Color Schema</h3>
-            <p>The site uses a modern blue palette to convey trust and cleanliness, with a gold accent to represent the
-                warmth of Filipino culture and the food itself.</p>
-
-            <div class="color-palette">
-                <div class="color-swatch primary">
-                    <span class="color-hex">#004E92</span>
-                    <span class="color-name">Deep Ocean Blue</span>
-                    <span class="color-usage">Headers, Footer, Buttons</span>
-                </div>
-                <div class="color-swatch secondary">
-                    <span class="color-hex">#000428</span>
-                    <span class="color-name">Midnight Blue</span>
-                    <span class="color-usage">Text, Dark Accents</span>
-                </div>
-                <div class="color-swatch accent">
-                    <span class="color-hex">#FFAE00</span>
-                    <span class="color-name">Golden Yellow</span>
-                    <span class="color-usage">Highlights, Call to Action</span>
-                </div>
-                <div class="color-swatch background">
-                    <span class="color-hex">#F9FAFB</span>
-                    <span class="color-name">Off White</span>
-                    <span class="color-usage">Page Background</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-card">
-            <h3>5. Typography</h3>
-            <div class="typography-showcase">
-                <div class="font-group">
-                    <h4>Headings: Poppins</h4>
-                    <p class="font-example heading-font">The quick brown fox jumps over the lazy dog.</p>
-                    <p class="font-usage">Used for: H1, H2, H3, Nav Links</p>
-                </div>
-                <div class="font-group">
-                    <h4>Body Text: Open Sans</h4>
-                    <p class="font-example body-font">The quick brown fox jumps over the lazy dog.</p>
-                    <p class="font-usage">Used for: Paragraphs, Lists, Form Labels</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-card">
-            <h3>6. Wireframes</h3>
-            <div class="wireframes-container">
-                <div class="wireframe-block">
-                    <h4>Mobile View</h4>
-                    <img src="images/wireframe-mobile.png" alt="Mobile Wireframe">
-                </div>
-                <div class="wireframe-block">
-                    <h4>Desktop View</h4>
-                    <img src="images/wireframe-desktop.png" alt="Desktop Wireframe">
-                </div>
+        <section class="container featured">
+            <h3>Featured Favorites</h3>
+            <div class="food-grid" id="featured-grid">
+                <!-- Dynamically populated by JS -->
             </div>
         </section>
 
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> <span>🌸</span> Kyle Danielle Santiago <span>🌸</span> Local
-                Filipino
-                Street Foods Project Plan</p>
-            <p>Last Modification: <span id="modified"></span></p>
+        <div class="container footer-content">
+            <p>© <span id="currentyear"></span> Kyle Danielle Santiago 🌸 Local Food Philippines</p>
+            <p id="lastModified"></p>
         </div>
     </footer>
 

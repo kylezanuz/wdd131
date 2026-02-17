@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Favorite | Local Filipino Street Foods</title>
+    <meta name="description"
+        content="Share your favorite Filipino street food with us! Fill out the form and join our community.">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Local Filipino Street Foods Logo" width="50" height="50">
+                <span>Filipino Street Foods</span>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <ul id="nav-menu">
+                    <li><a href="siteplan.html">Home</a></li>
+                    <li><a href="siteplan-menu.html">Street Foods</a></li>
+                    <li><a href="siteplan-contact.html" class="active">Share Your Favorite</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Share Your Favorite</h1>
+        <p>We'd love to hear about your street food experiences! Tell us which one is your top choice.</p>
+
+        <form id="street-food-form" class="styled-form">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="yourname@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="fav-food">Your Favorite Street Food:</label>
+                <select id="fav-food" name="fav-food" required>
+                    <option value="" disabled selected>Select one...</option>
+                    <option value="kwek-kwek">Kwek-kwek</option>
+                    <option value="isaw">Isaw</option>
+                    <option value="fish-balls">Fish Balls</option>
+                    <option value="balut">Balut</option>
+                    <option value="taho">Taho</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Why do you love it?</label>
+                <textarea id="message" name="message" rows="4"
+                    placeholder="Tell us about the flavor, where you buy it, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Recommendation</button>
+        </form>
+
+        <div id="form-feedback" class="hidden">
+            <div class="success-message">
+                <h3>Salamat!</h3>
+                <p>Thank you for sharing your favorite street food with us, <span id="user-name-display"></span>!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="currentyear"></span> Kyle Danielle Santiago 🌸 Local Food Philippines</p>
+            <p> id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/siteplan.js"></script>
+</body>
+
+</html>

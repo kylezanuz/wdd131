@@ -36,7 +36,6 @@ h3 {
     padding: 0 1.5rem;
 }
 
-/* Header & Nav */
 header {
     background-color: var(--midnight-blue);
     color: var(--white);
@@ -96,7 +95,6 @@ header {
     cursor: pointer;
 }
 
-/* Hero */
 .hero {
     position: relative;
     height: 60vh;
@@ -130,7 +128,6 @@ header {
     margin-bottom: 2rem;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     background-color: var(--accent-gold);
@@ -149,7 +146,6 @@ header {
     transform: translateY(-2px);
 }
 
-/* Food Grid */
 .food-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -195,7 +191,6 @@ header {
     margin-bottom: 0.8rem;
 }
 
-/* Filters */
 .filter-controls {
     display: flex;
     gap: 1rem;
@@ -220,7 +215,6 @@ header {
     color: var(--white);
 }
 
-/* Form */
 .styled-form {
     background: var(--white);
     padding: 2.5rem;
@@ -263,7 +257,6 @@ header {
     margin-top: 2rem;
 }
 
-/* Counter */
 .visit-counter {
     text-align: center;
     padding: 2rem 0;
@@ -272,7 +265,6 @@ header {
     border-radius: 10px;
 }
 
-/* Footer */
 footer {
     background: var(--midnight-blue);
     color: var(--white);
@@ -302,7 +294,6 @@ footer {
     color: var(--white);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     #menu-toggle {
         display: block;
